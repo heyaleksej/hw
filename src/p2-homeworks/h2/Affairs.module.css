@@ -1,0 +1,11 @@
+.affair {
+    display: flex;
+
+}
+.item{
+    width: 50px;
+}
+.button{
+    width: 30px;
+    color: darkgrey;
+}
