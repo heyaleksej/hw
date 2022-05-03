@@ -1,6 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
+import {inspect} from "util";
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
@@ -17,14 +18,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const [error, setError] = useState<string >('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        // setName(e.currentTarget.value) // need to fix
 
         const trimmedName = e.currentTarget.value.trim()
         if (trimmedName) {
             setName(trimmedName)
-            setError('')
+            error && setError('')
         } else {
-            setName('')
+            name && setName('')
             setError('Имя не указано')
         }
     }
@@ -33,12 +33,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const addUser = () => {
         addUserCallback(name)
-        alert(`Hello ${name} !`) // need to fix
+        alert(`Hello, ${name} !`) // need to fix
         setName('')
     }
     const onKeyPressName = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === "Enter"&& name) {
+        if (e.key === 'Enter' && name) {
             addUser()
+            setName('')
         }
     }
 

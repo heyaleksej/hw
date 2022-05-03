@@ -3,6 +3,7 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import cs from "../../commonStyles/HWBlock.module.css";
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -20,9 +21,9 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
-        <div>
-            <hr/>
-            homeworks 4
+        <div className={cs.HWBlock}>
+            <h2 className={cs.blockTitle}>            homeworks 4
+            </h2>
 
             <div className={s.column}>
                 <SuperInputText

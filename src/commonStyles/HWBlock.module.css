@@ -1,0 +1,26 @@
+.HWBlock {
+    display: flex;
+    background: url("https://avatanplus.com/files/resources/original/57ff4af1b2b4a157bd3cc044.png");
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 240px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.blockTitle {
+    font-size: large;
+    letter-spacing: 1px;
+    font-weight: bold;
+    height: 50px;
+    text-align: left;
+}
+
+
+
+
+

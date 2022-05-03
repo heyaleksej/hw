@@ -1,3 +1,35 @@
 .App {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.title {
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center
+}
+
+.title2 {
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: bold;
+    height: 50px;
+    text-align: left;
+}
+
+.rr {
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .App {
+        flex-direction: column;
+    }
 
 }

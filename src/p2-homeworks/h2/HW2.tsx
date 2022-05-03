@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import cstyle from './../../../src/commonStyles/HWBlock.module.css'
 
 // types
 export type AffairPriorityType = 'low' | 'high' | 'middle'
@@ -22,11 +23,11 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === 'all') return affairs
-    else return affairs.filter(aff =>aff.priority === filter)// need to fix
+    else return affairs.filter(a => a.priority === filter)// need to fix
 }
 export const deleteAffair = (affairs: Array<AffairType>, id: number): Array<AffairType> => {
     // need to fix any
-    return affairs.filter(aff=>aff.id !==id)// need to fix
+    return affairs.filter(aff => aff.id !== id)// need to fix
 
 }
 
@@ -38,9 +39,11 @@ function HW2() {
     const deleteAffairCallback = (id: number) => setAffairs(deleteAffair(affairs, id)) // need to fix any
 
     return (
-        <div>
-            <hr/>
-            homeworks 2
+        <div className={cstyle.HWBlock}>
+
+            <h2 className={cstyle.blockTitle}> homework 2
+            </h2>
+            {/*<hr className={s.title}/>*/}
 
             {/*should work (должно работать)*/}
             <Affairs
@@ -49,10 +52,10 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
-            <hr/>
+            {/*<hr/>*/}
+            {/*/!*для личного творчества, могу проверить*!/*/}
+            {/*/!*<AlternativeAffairs/>*!/*/}
+            {/*<hr/>*/}
         </div>
     )
 }

@@ -1,11 +1,63 @@
+.hw2 {
+    position: relative;
+    left: 20px;
+    align-items: flex-start;
+}
+
 .affair {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 
 }
-.item{
-    width: 50px;
+
+.affairsBlock{
+    width: inherit;
 }
-.button{
+
+.item {
+    width: 80px;
+}
+
+.buttonsBlock {
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.priority{
+    align-items: center;
+
+}
+
+.red{
+    color: red;
+    text-shadow: 1px 1px 4px gray;
+}
+.yellow{
+    color: yellow;
+    text-shadow: 1px 1px 4px gray;
+
+}
+.green{
+    color: green;
+    text-shadow: 1px 1px 4px gray;
+
+}
+
+.button {
+    padding-top: 10px;
     width: 30px;
-    color: darkgrey;
+    color: #8d8989;
+}
+
+
+button:hover {
+    border-color: #161418;
+    color: #2d1842;
+    background: rgb(255, 255, 255);
 }
