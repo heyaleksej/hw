@@ -1,26 +1,24 @@
-.HWBlock {
+.HWBlock{
     display: flex;
-    background: url("https://avatanplus.com/files/resources/original/57ff4af1b2b4a157bd3cc044.png");
+    background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
     width: 240px;
-    height: 300px;
+    min-height: 300px;
     border: 1px solid;
     border-radius: 15px;
     margin: 5px;
 }
 
-.blockTitle {
+.blockTitle{
     font-size: large;
     letter-spacing: 1px;
     font-weight: bold;
     height: 50px;
     text-align: left;
 }
-
-
 
 
 

@@ -4,27 +4,29 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import cs from "../../commonStyles/HWBlock.module.css";
+import style from "./common/c2-SuperButton/SuperButton.module.css";
+import logo from './../../commonStyles/errror logo.png'
 
 function HW4() {
     const [text, setText] = useState<string>('')
-    const error = text ? '' : 'error'
+    const error = text ? '' : 'Error'
 
     const showAlert = () => {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(`текст ${text} удален`) // если нет ошибки показать текст
+            setText('')
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
+
     return (
         <div className={cs.HWBlock}>
-            <h2 className={cs.blockTitle}>            homeworks 4
-            </h2>
-
+            <h2 className={cs.blockTitle}> homework 4 </h2>
             <div className={s.column}>
                 <SuperInputText
                     value={text}
@@ -34,26 +36,26 @@ function HW4() {
                     // spanClassName={s.testSpanError}
                 />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
+                {/*<SuperInputText*/}
+                {/*    className={s.blue} // проверьте, рабоет ли смешивание классов*/}
+                {/*/>*/}
 
                 {/*----------------------------------------------------*/}
+                    <SuperButton>
+                        default
+                    </SuperButton>
 
-                <SuperButton>
-                    default
-                </SuperButton>
+                    <SuperButton
+                        red // пропсу с булевым значением не обязательно указывать true
+                        onClick={showAlert}
+                    >
+                        delete {/*// название кнопки попадёт в children*/}
+                    </SuperButton>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
+                    <SuperButton className={style.disabled} disabled>
+                        disabled
+                    </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
 
                 {/*----------------------------------------------------*/}
 

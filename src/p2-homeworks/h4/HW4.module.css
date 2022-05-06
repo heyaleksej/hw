@@ -6,8 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .testSpanError {
-    color: blue;
+    color: #e32323;
+}
+
+.buttons {
+    flex-direction: column;
+    position: fixed;
 }
