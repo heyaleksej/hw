@@ -12,10 +12,10 @@ function App() {
             <h2 className={s.title}>React homeworks:</h2>
 
             <span className={s.App}>
-            <HW1/>
-            <HW2/>
-            <HW3/>
-            <HW4/>
+            {/*<HW1/>*/}
+            {/*<HW2/>*/}
+            {/*<HW3/>*/}
+            {/*<HW4/>*/}
             <HW5/>
 
         </span>

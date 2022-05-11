@@ -1,19 +1,17 @@
 import React from 'react'
 import Header from './Header'
-import Routes from './Routes'
-import style from './../../commonStyles/HWBlock.module.css'
+import RoutesComp from './RoutesComp'
+import {HashRouter} from 'react-router-dom';
 
 function HW5() {
     return (
-        <div className={style.HWBlock}>
+        <div>
             {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
+            <HashRouter>
+                <Header/>
+                <RoutesComp/>
 
-            <Header/>
-
-            <Routes/>
-
-            {/*</HashRouter>*/}
+            </HashRouter>
         </div>
     )
 }

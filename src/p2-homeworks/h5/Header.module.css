@@ -1,0 +1,62 @@
+.linkContainer::after {
+    content: 'Levels';
+    padding-top: 25px;
+
+
+
+
+}
+
+.linkContainer {
+    display: flex;
+    width: 500px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background: #7DE87799;
+    border-radius: 15px;
+    transform: translate(-480px);
+    transition-duration: 300ms;
+    padding: 15px;
+}
+
+.linkContainer:hover {
+
+    border-radius: 15px;
+    transform: translate(-20px);
+    transition-duration: 300ms;
+    width: 480px;
+    justify-content: space-around;
+
+}
+
+.linkContainer:hover::after {
+    content: none;
+
+}
+
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+}
+
+.link:hover {
+    text-shadow: 2px 2px 2px white;
+}
+
+.link:active {
+    color: #2EE59D;
+}
+
+.levels{
+    display: contents;
+}
+
+
