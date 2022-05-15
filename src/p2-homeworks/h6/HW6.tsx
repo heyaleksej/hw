@@ -3,6 +3,7 @@ import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
 import s from './../../commonStyles/HWBlock.module.css'
+import so from './common/c4-SuperEditableSpan/SuperEditableSpan.module.css'
 
 function HW6() {
     const [value, setValue] = useState<string>('')
@@ -11,20 +12,20 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        restoreState<string>('editable-span-value', '')
+        setValue('')
     }
 
     return (
         <div className={s.HWBlock}>
-            <hr/>
-            homeworks 6
-
+            <h2 className={s.blockTitle}> homework 6
+            </h2>
             {/*should work (должно работать)*/}
-            <div>
+            <div className={so.span}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
+                    spanProps={{children: value ? undefined : 'Введите текст...'}}
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>

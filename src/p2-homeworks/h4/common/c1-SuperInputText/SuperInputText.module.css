@@ -2,13 +2,13 @@
     outline: none;
     font-family: monospace;
     width: 100%;
-    padding: 14px 10px;
+    height: 20px;
+    padding: 15px;
     border: 2px solid green;
     border-radius: 15px;
     box-sizing: border-box;
     cursor: pointer;
     font-size: large;
-    height: content-box;
 }
 
 .errorInput {
