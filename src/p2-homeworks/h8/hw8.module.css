@@ -1,0 +1,19 @@
+
+
+.name{
+    width: 160px;
+    justify-content: start;
+    float: left;
+
+}
+
+.age{
+    justify-content: flex-end;
+    float: right;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

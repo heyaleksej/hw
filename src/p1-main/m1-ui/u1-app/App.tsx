@@ -8,9 +8,8 @@ import s from './App.module.css'
 
 function App() {
     return (
-        <div>
-            <h2 className={s.title}>React homeworks:</h2>
-
+        <div className={s.all}>
+            <div className={s.title}>React homeworks:</div>
             <span className={s.App}>
             {/*<HW1/>*/}
             {/*<HW2/>*/}

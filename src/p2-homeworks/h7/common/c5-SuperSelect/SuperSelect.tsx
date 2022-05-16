@@ -40,7 +40,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
                     className={s.option}
                     {...restProps}>
                 {mappedOptions}
-                <option className={s.option}>gggg</option>
+                <option className={s.option}>Hggg</option>
             </select>
             <span className={s.customArrow}>
                 <div className={s.arrow}>&#11015;</div></span>

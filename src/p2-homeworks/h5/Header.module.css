@@ -3,8 +3,6 @@
     padding-top: 25px;
 
 
-
-
 }
 
 .linkContainer {
@@ -55,8 +53,58 @@
     color: #2EE59D;
 }
 
-.levels{
+.levels {
     display: contents;
 }
 
 
+@media screen and (max-width: 500px) {
+
+    .linkContainer {
+        width: 330px;
+        transform: translate(-300px);
+        padding: 5px;
+    }
+
+    .linkContainer:hover {
+
+        transform: translate(-30px);
+        width: 360px;
+        justify-content: space-around;
+
+
+    }
+    .linkContainer::after {
+        content: 'Levels';
+        padding-top: 12px;
+
+
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .linkContainer {
+        width: 330px;
+        transform: translate(-280px);
+        justify-content: left;
+
+    }
+
+    .linkContainer:hover {
+
+        transform: translate(-10px);
+        width: 240px;
+        justify-content: space-around;
+
+
+    }
+    .linkContainer::after {
+        content: 'Levels';
+        padding-top: 12px;
+
+
+    }
+
+}

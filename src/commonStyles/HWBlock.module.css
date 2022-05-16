@@ -1,4 +1,4 @@
-.HWBlock{
+.HWBlock {
     display: flex;
     background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
     flex-direction: column;
@@ -12,7 +12,7 @@
     margin: 5px;
 }
 
-.blockTitle{
+.blockTitle {
     font-size: large;
     letter-spacing: 1px;
     font-weight: bold;
@@ -20,5 +20,19 @@
     padding-bottom: 20px;
 }
 
+
+@media screen and (max-width: 280px) {
+    .HWBlock {
+        padding: 3px;
+        margin: 0;
+        width: 200px;
+        align-items: center;
+
+
+
+
+
+
+    }}
 
 
