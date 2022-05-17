@@ -1,12 +1,11 @@
 import React from 'react'
 import Clock from './Clock'
+import s from './../../commonStyles/HWBlock.module.css'
 
 function HW9() {
     return (
-        <div>
-            <hr/>
-            homeworks 9
-
+        <div className={s.HWBlock}>
+            <h2 className={s.blockTitle}>homework 9</h2>
             {/*should work (должно работать)*/}
             <Clock/>
 

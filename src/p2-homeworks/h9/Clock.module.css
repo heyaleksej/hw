@@ -1,0 +1,25 @@
+
+.time {
+    height: 40px;
+    width: 100%;
+    text-wrap: none;
+    letter-spacing: 3px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px 5px 0 5px;
+    background: white 10%;
+
+}
+
+.timeBlock{
+    position: relative;
+    left:55px;
+}
+
+
+.content {
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}

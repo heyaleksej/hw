@@ -1,7 +1,7 @@
 .linkContainer::after {
     content: 'Levels';
     padding-top: 25px;
-
+    font-weight: bold;
 
 }
 

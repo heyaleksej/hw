@@ -3,10 +3,12 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import Error404 from './pages/Error404';
 import PreJunior from './pages/PreJunior';
 import JuniorPlus from "./pages/JuniorPlus";
+import HW1012 from "./pages/HW1012";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
-    JUNIOR_PLUS: '/junior-plus'
+    JUNIOR_PLUS: '/junior-plus',
+    HW10_12:'/hw10_12'
 
     // add paths
 }
@@ -22,6 +24,7 @@ function RoutesComp () {
 
             <Route path={PATH.PRE_JUNIOR}  element={<PreJunior/>}/>
             <Route path={PATH.JUNIOR_PLUS}  element={<JuniorPlus/>}/>
+            <Route path={PATH.HW10_12}  element={<HW1012/>}/>
 
                 // add routes
 
