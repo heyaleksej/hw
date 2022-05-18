@@ -1,17 +1,16 @@
-
-const THEME ='THEME'
+import {ttypes} from "../HW12";
 
 const initState = {
     theme: 'classic'
 };
 
 type ActionCType = {
-    theme:string,
-    type: typeof THEME
+    theme:ttypes,
+    type: string
 
 }
 
-export const ThemeReducerAC = (theme: string): ActionCType => {
+export const ThemeReducerAC = (theme: ttypes): ActionCType => {
     return {
         type: 'THEME', theme
     } as const

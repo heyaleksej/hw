@@ -9,10 +9,12 @@ import {ThemeReducerAC} from "./bll/themeReducer";
 
 const themes = ['dark', 'red', 'classic'];
 
+export type ttypes = 'dark' |'red'| 'classic'
+
 function HW12() {
     const theme: string = useSelector<AppStoreType, string>(state => state.theme.theme);
     const dispatch = useDispatch()
-    const onChangeCallback = (theme: string) => {
+    const onChangeCallback = (theme: ttypes) => {
         dispatch(ThemeReducerAC(theme))
     }
 // useSelector
