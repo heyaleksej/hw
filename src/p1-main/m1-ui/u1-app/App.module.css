@@ -31,9 +31,14 @@
     .App {
         flex-direction: column;
         align-items: center;
-        display: inline-block;
+        display: flex;
 
+    }}
 
-
+@media screen and (max-width: 300px) {
+    .App {
+        flex-direction: column;
+        align-items: center;
+        display: block;
 
     }}

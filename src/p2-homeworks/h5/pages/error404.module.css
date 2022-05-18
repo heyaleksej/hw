@@ -1,0 +1,27 @@
+body {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notfound {
+    top: 100%;
+    left: 39%;
+    align-items: center;
+    font-size: 40px;
+}
+
+.number {
+    font-size: 140px;
+}
+
+.button{
+    position: absolute;
+    left:80px
+}
+
+
+
+

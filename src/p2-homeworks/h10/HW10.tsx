@@ -38,7 +38,7 @@ function HW10() {
                 {/*should work (должно работать)*/}
                 {Load
                     ? (
-                        <div className={sa.clockLoader}></div>
+                        <div className={sa.clockLoader}> </div>
                     ) : (
                             <SuperButton  onClick={setLoading}>set loading...</SuperButton>
                     )

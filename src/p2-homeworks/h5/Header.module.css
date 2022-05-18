@@ -57,6 +57,12 @@
     display: contents;
 }
 
+.notfound{
+    align-items: center;
+    width: 100px;
+    border: 1px solid;
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -68,15 +74,15 @@
 
     .linkContainer:hover {
 
-        transform: translate(-30px);
-        width: 360px;
+        transform: translate(-10px);
+        width: 330px;
         justify-content: space-around;
 
 
     }
     .linkContainer::after {
         content: 'Levels';
-        padding-top: 12px;
+        padding-top: 15px;
 
 
     }
@@ -87,22 +93,24 @@
 
     .linkContainer {
         width: 330px;
-        transform: translate(-280px);
+        transform: translate(-293px);
         justify-content: left;
 
     }
 
     .linkContainer:hover {
 
-        transform: translate(-10px);
-        width: 240px;
+        transform: translate(-15px);
+        width: 255px;
         justify-content: space-around;
+        margin: 0;
 
 
     }
     .linkContainer::after {
         content: 'Levels';
-        padding-top: 12px;
+        padding-top: 14px;
+        padding-left: 15px;
 
 
     }
