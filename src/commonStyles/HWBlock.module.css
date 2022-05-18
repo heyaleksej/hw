@@ -21,10 +21,35 @@
 }
 
 .content{
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:200px
 }
 
+.dark {
+    background: url("https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1639622647_2-abrakadabra-fun-p-fon-messendzhera-2.jpg");
+;
+}
+
+.dark-text {
+    color: aliceblue;
+}
+
+.red {
+    background: url('https://top-fon.com/uploads/posts/2021-07/thumbs/1626858558_16-p-krasnii-fon-dlya-chata-17.jpg');
+}
+
+.red-text {
+    color: aqua;
+}
+
+
+
+
+.some-text {
+    color: darkslateblue;
+}
 
 
 @media screen and (max-width: 280px) {

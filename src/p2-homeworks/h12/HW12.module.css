@@ -1,5 +1,5 @@
 .dark {
-    background: dimgrey;
+    background: url("https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1639622647_2-abrakadabra-fun-p-fon-messendzhera-2.jpg");
 }
 
 .dark-text {
@@ -14,9 +14,6 @@
     color: aqua;
 }
 
-.some {
-    background: lightgreen;
-}
 
 .some-text {
     color: darkslateblue;

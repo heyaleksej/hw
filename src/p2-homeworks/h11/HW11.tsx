@@ -22,7 +22,7 @@ function HW11() {
 
     return (
         <div className={s.HWBlock}>
-            <h2 className={s.blockTitle}> Homework 11</h2>
+            <h2 className={s.blockTitle}> homework 11</h2>
 
             {/*should work (должно работать)*/}
             <div>
