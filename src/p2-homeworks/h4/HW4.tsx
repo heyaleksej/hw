@@ -5,7 +5,6 @@ import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import cs from "../../commonStyles/HWBlock.module.css";
 import style from "./common/c2-SuperButton/SuperButton.module.css";
-import logo from './../../commonStyles/errror logo.png'
 
 function HW4() {
     const [text, setText] = useState<string>('')
